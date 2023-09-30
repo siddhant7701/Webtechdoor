@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="/public/contact.css">
+
+    <title>Contact Us</title>
+    <style>
+        @media (max-width: 991px) {
+            #backToTopBtn {
+                height: 3rem;
+            }
+        }
+    </style>
+    <link rel="icon" href="/public/images/logo.ico" type="image">
+
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/public/images/logo.ico" alt="logo"></a>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">&#9776;</label>
+        <nav class="navbar">
+            <ul class="navbar-content">
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/index.html">Home</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/about.html">About</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/services.html">Services</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="image-container">
+            <img src="/public/images/contact-img.jpg" alt="Contact">
+            <div class="image-text">
+                Contact Form </div>
+        </div>
+    </section>
+    <section class="banner banner-contact">
+        <section class="contact-form">
+
+            <form id="contact-form" action="https://formspree.io/f/myyqnvol" method="POST">
+                <div class="name-section">
+                    <div class="input-group">
+                        <label for="First-name">First Name:</label>
+                        <input type="text" id="First-name" name="First-name" class="form-input" placeholder="First Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" class="form-input" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="text" id="phone-number" name="phone-number" class="form-input" placeholder="Phone" required>
+                    </div>
+                </div>
+                <div class="selection-work">
+                    <label>Select the type of work:</label>
+                    <div class="work-section">
+                        <label><input type="radio" name="work-type" value="Web-development"><p>Web Development</p></label>
+                        <label><input type="radio" name="work-type" value="UI/UX Design"><p>UI/UX Design</p></label>
+                        <label><input type="radio" name="work-type" value="Logo Design"><p>Logo Design</p></label>
+                        <label><input type="radio" name="work-type" value="E-commerce Website Development"><p>E-commerce Website Development</p></label>
+
+                        <label><input type="radio" name="work-type" value="other"><p>Other</p>(Please define in the message)</p></label> </div>
+                </div>
+                <div class="message-section">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-contact-button">Send Message</button>
+            </form>
+        </section>
+
+    </section>
+    <!-- Back to top button -->
+    <a id="backToTopBtn" href="#navbar"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7" />
+</svg>
+    </a>
+
+    <section class="footer-section">
+        <div class="row-footer" id="footer">
+            <div class="footer-content">
+                <a href="/about.html">
+                    <h1>About Us</h1>
+                </a>
+                <p>Transforming Ideas into Digital Excellence: Web Development, Web-app Developement, and Logo Crafting.</p>
+            </div>
+
+
+            <div class="footer-content">
+                <a href="/contact.html">
+                    <h1>Contact Us</h1>
+                </a>
+                <ul>
+                    <!-- <li>
+                        <h3>Call Us</h3>
+                        <a href="tel:+91998985665">+9191919191</a></li> -->
+                    <li>
+                        <h3>Email </h3>
+                        <a href="mailto:
+                        webtechdoor@outlook.com">
+                        webtechdoor@outlook.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <a href="/services.html">
+                    <h1>Services</h1>
+                </a>
+                <ul>
+                    <li>Web-development</li>
+                    <li>Web App Developement</li>
+                    <li>Logo Design</li>
+                    <li>E-commerce Website Development</li>
+
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Webtechdoor. All Rights Reserved.</p>
+        </footer>
+    </section>
+    <script src="/script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

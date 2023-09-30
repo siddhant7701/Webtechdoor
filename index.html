@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> -->
+    <title>Home Page</title>
+    <style>
+        @media (max-width: 991px) {
+            #backToTopBtn {
+                height: 3rem;
+            }
+        }
+    </style>
+    <link rel="icon" href="/public/images/logo.ico" type="image">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/public/images/logo.ico" alt="logo"></a>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">&#9776;</label>
+        <nav class="navbar">
+            <ul class="navbar-content">
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/index.html">Home</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/about.html">About</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/services.html">Services</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner bubble-container" style="padding-top:80px;">
+        <div class="banner-content">
+
+            <div class="banner-text-container" id="top">
+                <h1>Welcome to Webtechdoor</h1>
+                <p>Step into a mesmerizing realm where digital dreams come to vibrant life, and imagination knows no bounds.</p>
+
+            </div>
+            <div class="banner-image-container">
+                <img class="banner-image" src="/public/images/home-img.png" alt="Banner Image">
+            </div>
+
+        </div>
+
+    </section>
+    <br>
+    <section id="About-us" class="about-us">
+        <div class="about">
+            <div class="about-image">
+                <h2 style="border-bottom: 2px solid;">About Us</h2>
+
+                <img src="/public/images/about.jpg" class="pic" alt="Team Image">
+
+                <div class="text">
+                    <h3>Welcome to Webtechdoor, where innovation meets impact.</h3>
+                    <p>We're dedicated to crafting web solutions that blend creativity and technology to bring your brand's vision to life.</p>
+                    <br>
+                    <a href="/about.html" class="about-btn">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <section class="services-section" id="Services">
+        <div class="container">
+            <h2 class="service-heading" style="border-bottom: 2px solid;color:rgb(255, 255, 255);">Our Services</h2>
+            <section class="services">
+                <div class="card">
+                    <div class="content">
+                        <h3 style="border-bottom: white 2px solid;">Web Development</h3><br>
+                        <p>Custom web development solutions for your unique business needs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 style="border-bottom: white 2px solid;">Web App Development</h3><br>
+                        <p>Transforming ideas into functional web applications for your success.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 style="border-bottom: white 2px solid;">Logo Design</h3><br>
+                        <p>Memorable and unique logos that represent your brand.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3 style="border-bottom: white 2px solid;">E-commerce Website Development</h3><br>
+                        <p>Expertly designed e-commerce websites to boost online sales.</p>
+                    </div>
+                </div>
+            </section>
+            <a href="/services.html" class="read-more-link">Read More</a><br>
+        </div>
+    </section>
+
+
+
+    <!-- <div class="testimonial-slider" id="testimonial">
+        <a class="prev-btn" onclick="plusTestimonials(-1)">❮</a>
+        <div class="testimonial">
+            <img src="/public/images/user.png" alt="" class="circular-frame" />
+            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+            <div class="quote-icon-div">
+                <i class="bi bi-quote testimonial-quote-icon "></i>
+            </div>
+            <p class="author">John Keats</p>
+        </div>
+        <div class="testimonial">
+            <img src="/public/images/user.png" alt="" class="circular-frame" />
+            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <div class="quote-icon-div">
+                <i class="bi bi-quote testimonial-quote-icon "></i>
+            </div>
+            <p class="author">Ernest Hemingway</p>
+        </div>
+        <div class="testimonial">
+            <img src="/public/images/user.png" alt="" class="circular-frame" />
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <div class="quote-icon-div">
+                <i class="bi bi-quote testimonial-quote-icon "></i>
+            </div>
+            <p class="author">Thomas A. Edison</p>
+        </div>
+        <a class="next-btn" onclick="plusTestimonials(1)">❯</a>
+        <div class="dot-container">
+            <span class="dot" onclick="currentTestimonial(1)"></span>
+            <span class="dot" onclick="currentTestimonial(2)"></span>
+            <span class="dot" onclick="currentTestimonial(3)"></span>
+        </div>
+    </div> -->
+    <section class="user-card-container">
+        <div class="user-card">
+            <div class="user-per-card">
+                <div><img src="/public/images/user.png" alt="" /></div>
+                <div class="user-count">30+</div>
+                <div class="user-name">Happy Customers</div>
+            </div>
+            <div class="user-per-card">
+                <div><img src="/public/images/user.png" alt="" /></div>
+                <div class="user-count">700+</div>
+                <div class="user-name">Satisfied Clients</div>
+            </div>
+
+        </div>
+    </section><br>
+    <!-- End of custom testimonials -->
+
+    <!-- <div class="container call" id="contact">
+        <h1 style="border-bottom: 2px solid;">
+            Start a new project?
+        </h1>
+        <p>
+            Call us on this Number
+        </p>
+        <h2>
+            +91 9191919191
+        </h2>
+
+        <a href="/contact.html">
+            <div> Contact Us</div>
+        </a>
+    </div> -->
+    <!-- Back to top button -->
+    <a id="backToTopBtn" href="#navbar"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7" />
+</svg>
+    </a>
+
+    <section class="footer-section">
+        <div class="row-footer" id="footer">
+            <div class="footer-content">
+                <a href="/about.html">
+                    <h1>About Us</h1>
+                </a>
+                <p>Transforming Ideas into Digital Excellence: Web Development, Web-app Developement, and Logo Crafting.</p>
+            </div>
+
+
+            <div class="footer-content">
+                <a href="/contact.html">
+                    <h1>Contact Us</h1>
+                </a>
+                <ul>
+                    <!-- <li>
+                        <h3>Call Us</h3>
+                        <a href="tel:+91998985665">+9191919191</a></li>
+                    <li> -->
+                    <h3>Email </h3>
+                    <a href="mailto:
+                        webtechdoor@outlook.com">
+                        webtechdoor@outlook.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <a href="/services.html">
+                    <h1>Services</h1>
+                </a>
+                <ul>
+                    <li>Web-development</li>
+                    <li>Web App Developement</li>
+                    <li>Logo Design</li>
+                    <li>E-commerce Website Development</li>
+
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Webtechdoor. All Rights Reserved.</p>
+        </footer>
+    </section>
+    <script src="/script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

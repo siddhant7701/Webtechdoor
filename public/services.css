@@ -1,0 +1,176 @@
+.hero {
+    color: #fff;
+    animation: slideInUp 1s ease-in-out;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    /* Increase padding for mobile view */
+    text-align: center;
+    /* Center align text */
+}
+
+
+/* @keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
+}
+
+.tile {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tile:hover {
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+.tile a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.tile-logo {
+    margin-bottom: 50px;
+}
+
+.tile h2 {
+    border-bottom: #000 1px solid;
+    flex: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+    .tile {
+        width: calc(100% - 20px);
+        /* Tiles take full width on smaller screens */
+    }
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tile img {
+    max-width: 100%;
+    height: 300px;
+}
+
+
+/* Style the image container */
+
+.image-container {
+    position: relative;
+    /* Make it a positioning context */
+}
+
+
+/* Style the text that will be overlaid on the image */
+
+.image-text {
+    position: absolute;
+    /* Position it absolutely within the image-container */
+    top: 50%;
+    /* Align text to the vertical center */
+    left: 50%;
+    /* Align text to the horizontal center */
+    transform: translate(-50%, -50%);
+    background-color: #0000006d;
+    color: #fff;
+    /* Text color */
+    padding: 10px 20px;
+    /* Add padding for better readability */
+    font-size: 50px;
+    /* Adjust the font size */
+}
+
+
+/* Mobile view */
+
+@media (max-width: 768px) {
+    .tiles {
+        flex-direction: column;
+        /* Tiles stack vertically on smaller screens */
+    }
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    justify-content: center;
+    right: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: orange;
+    border: 2px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    height: 8%;
+    transition: opacity 0.3s;
+    z-index: 10000;
+}
+
+#backToTopBtn:hover {
+    color: white;
+    background-color: orange;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 10px;
+    }
+    header label {
+        display: initial;
+        height: 35px;
+        font-size: 25px;
+        margin: 1%;
+    }
+    header .navbar {
+        position: flex;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background: #eee;
+        margin: 1%;
+        font-size: 2rem;
+    }
+    .navbar-content {
+        display: block;
+    }
+    .navbar-list-link {
+        color: #000;
+        font-size: 10px;
+    }
+    .navbar-list-link:hover {
+        border: 1px solid #000000;
+    }
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+    #backToTopBtn {
+        height: 7%;
+    }
+}

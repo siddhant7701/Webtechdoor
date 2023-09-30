@@ -1,0 +1,173 @@
+/* Hero Section */
+
+.hero {
+    color: #fff;
+    text-align: center;
+}
+
+.hero img {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    max-height: fit-content;
+}
+
+
+/* Image Container */
+
+.image-container {
+    position: relative;
+}
+
+
+/* Text Overlaid on Image */
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0000006d;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 50px;
+}
+
+
+/* About Section */
+
+.about {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    border-radius: 8%;
+    background: #ffffffda;
+}
+
+.about p {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* Employee Section */
+
+.employees {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.employee {
+    border-radius: 4%;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    background: #ffffffda;
+}
+
+.employee-image {
+    border-radius: 50%;
+    max-width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 4px solid #fff;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.employee-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.employee-title {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.employee-description {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    /* Employee Section for Mobile */
+    .employees {
+        flex-direction: column;
+        align-items: center;
+    }
+    .employee {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    justify-content: center;
+    right: 20px;
+    font-size: 20px;
+    background-color: white;
+    color: orange;
+    border: 2px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    height: 8%;
+    transition: opacity 0.3s;
+    z-index: 10000;
+}
+
+#backToTopBtn:hover {
+    color: white;
+    background-color: orange;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 10px;
+    }
+    header label {
+        display: initial;
+        height: 35px;
+        font-size: 25px;
+        margin: 1%;
+    }
+    header .navbar {
+        position: flex;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background: #eee;
+        margin: 1%;
+    }
+    .navbar-content {
+        display: block;
+    }
+    .navbar-list-link {
+        color: #000;
+        font-size: 10px;
+    }
+    .navbar-list-link:hover {
+        border: 1px solid #000000;
+    }
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+}

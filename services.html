@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="/public/services.css">
+    <style>
+        @media (max-width: 991px) {
+            #backToTopBtn {
+                height: 3rem;
+            }
+        }
+    </style>
+    <title>Services</title>
+    <link rel="icon" href="/public/images/logo.ico" type="image">
+
+</head>
+
+<body class="banner">
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/public/images/logo.ico" alt="logo"></a>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">&#9776;</label>
+        <nav class="navbar">
+            <ul class="navbar-content">
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/index.html">Home</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/about.html">About</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/services.html">Services</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="image-container">
+                <img src="public/images/services.jpg" alt="Company">
+                <div class="image-text">
+                    Our Services
+                </div>
+            </div>
+        </section>
+
+        <section class="tiles">
+            <div class="tile">
+                <img src="/public/images/web-developement-image.jpg" alt="Web-dev" class="tile-logo">
+                <h2>Web Development</h2><br>
+                <p>
+                    Tailored To Your Business Needs Experience Exclusivity To Its Core Your business website needs to be as special as your business. Web Flynt Technologies offers personal service in the form of custom web development solutions. Our expert developers work
+                    with you to make the website of your dreams, whether we’re starting from scratch or updating an old one. Our staff will work closely with you to make sure the end result fits your idea.
+                </p>
+            </div>
+            <div class="tile">
+                <img src="/public/images/ui-ux-design-image.jpg" alt="UI/UX" class="tile-logo">
+                <h2>Web App Development</h2><br>
+                <p>
+                    Expert Solutions That Transform Your Ideas into Functional Web Applications Web Flynt Technologies specializes in developing cutting-edge web applications that bring your ideas to life. Our experienced team is dedicated to crafting robust and innovative
+                    web solutions that meet your unique requirements. Whether you're building a web application from scratch or enhancing an existing one, we're here to turn your vision into reality.
+                </p>
+
+            </div>
+            <div class="tile">
+                <img src="/public/images/logo-design-image.jpg" alt="Logo" class="tile-logo">
+                <h2>Logo Design</h2><br>
+                <p>
+                    Your Brand's Identity Memorable & Unique Logos A well-designed logo is the cornerstone of your brand's identity. Our logo design services are tailored to create memorable and unique logos that represent your business's values and mission. We work closely
+                    with you to understand your vision and deliver a logo that sets you apart from the competition.
+                </p>
+            </div>
+            <div class="tile">
+                <img src="/public/images/ecom-img.jpg" alt="Logo" class="tile-logo">
+                <h2>E-commerce Website Development</h2><br>
+                <p>
+                    Elevate your online business with our expertly designed e-commerce websites. We build seamless platforms that enhance user experience, boost sales, and provide secure transactions, all while reflecting your brand's unique identity.
+                </p>
+            </div>
+        </section>
+        <!-- Back to top button -->
+        <a id="backToTopBtn" href="#navbar"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7" />
+</svg>
+        </a>
+
+
+        <section class="footer-section">
+            <div class="row-footer" id="footer">
+                <div class="footer-content">
+                    <a href="/about.html">
+                        <h1>About Us</h1>
+                    </a>
+                    <p>Transforming Ideas into Digital Excellence: Web Development, Web-app Developement, and Logo Crafting.</p>
+                </div>
+
+
+                <div class="footer-content">
+                    <a href="/contact.html">
+                        <h1>Contact Us</h1>
+                    </a>
+                    <ul>
+                        <li>
+                            <!-- <h3>Call Us</h3>
+                            <a href="tel:+91998985665">+9191919191</a></li> -->
+                            <li>
+                                <h3>Email </h3>
+                                <a href="mailto:
+                            webtechdoor@outlook.com">
+                            webtechdoor@outlook.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <a href="/services.html">
+                        <h1>Services</h1>
+                    </a>
+                    <ul>
+                        <li>Web-development</li>
+                        <li>Web App Developement</li>
+                        <li>Logo Design</li>
+                        <li>E-commerce Website Development</li>
+
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; 2023 Webtechdoor. All Rights Reserved.</p>
+            </footer>
+        </section>
+        <script src="/script.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+</body>
+
+</html>
