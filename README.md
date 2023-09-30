@@ -5,15 +5,6 @@ Webtechdoor is a web development company that specializes in creating innovative
 **Creator**: Siddhant Srivastava
 **Email**: srivastavasiddhant32@gmail.com
 
-## Table of Contents
-
-- [About](#about)
-- [Services](#services)
-- [Contact](#contact)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## About
 
 Welcome to Webtechdoor, where we turn your digital dreams into reality. Our website showcases our services and portfolio. Learn more [About Us](/about.html).
